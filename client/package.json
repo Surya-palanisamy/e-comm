@@ -1,0 +1,47 @@
+{
+  "name": "client",
+  "version": "1.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "",
+    "@emotion/styled": "",
+    "@mui/icons-material": "",
+    "@mui/material": "",
+    "@mui/styled-engine-sc": "",
+    "@mui/x-data-grid": "",
+    "@stripe/stripe-js": "",
+    "axios": "",
+    "form-data": "",
+    "js-cookie": "",
+    "lodash.debounce": "",
+    "react": "",
+    "react-dom": "",
+    "react-helmet": "",
+    "react-icons": "",
+    "react-router-dom": "",
+    "react-slick": "",
+    "react-toastify": "",
+    "slick-carousel": "",
+    "styled-components": "",
+    "tw-elements-react": ""
+  },
+  "devDependencies": {
+    "@types/react": "",
+    "@types/react-dom": "",
+    "@vitejs/plugin-react": "",
+    "autoprefixer": "",
+    "eslint": "",
+    "eslint-plugin-react": "",
+    "eslint-plugin-react-hooks": "",
+    "eslint-plugin-react-refresh": "",
+    "postcss": "",
+    "tailwindcss": "",
+    "vite": ""
+  }
+}
