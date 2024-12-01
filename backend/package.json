@@ -2,13 +2,13 @@
   "name": "e-commerce",
   "version": "1.0.0",
   "description": "e-commerce application",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "server": "nodemon server.js",
     "build": "npm install",
-    "dev": "concurrently \"npm run start\""
+    "dev": "npm run start"
   },
   "keywords": [],
   "author": "SURYA",
