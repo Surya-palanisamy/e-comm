@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon server.js",
+    "server": "nodemon index.js",
     "build": "npm install",
-    "dev": "npm run start"
+    "dev": "node index.js"
   },
   "keywords": [],
   "author": "SURYA",
