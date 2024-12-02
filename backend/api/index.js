@@ -14,10 +14,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 //local imports
-import connectDB from "./config/database.js";
-import authRoute from "./routes/authRoute.js";
-import productRoute from "./routes/productRoute.js";
-import userRoute from "./routes/userRoute.js";
+import connectDB from "../config/database.js";
+import authRoute from "../routes/authRoute.js";
+import productRoute from "../routes/productRoute.js";
+import userRoute from "../routes/userRoute.js";
 
 //rest object
 const app = express();
@@ -50,7 +50,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 connectDB();
 
 //port
-const PORT = process.env.PORT || 8080;
+let PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
     res.send("Hello there!");
@@ -61,9 +61,9 @@ app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/product", productRoute);
 app.use("/api/v1/user", userRoute);
 
-app.use("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "../client/dist/index.html"));
-});
+// app.use("*", function (req, res) {
+//     res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+// });
 
 app.listen(PORT, () => {
     console.log(`SERVER RUNNING ON PORT ${PORT}`);
