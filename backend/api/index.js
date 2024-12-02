@@ -50,7 +50,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 connectDB();
 
 //port
-let PORT = process.env.PORT || 3000;
+let PORT = process.env.PORT || 3000 || 8080;
 
 app.get("/", (req, res) => {
     res.send("Hello there!");
