@@ -8,16 +8,16 @@ import bodyParser from "body-parser";
 import fileUpload from "express-fileupload";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
-import path from "path";
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 //local imports
-import connectDB from "../config/database.jss";
-import authRoute from "../routes/authRoute.jss";
-import productRoute from "../routes/productRoute.jss";
-import userRoute from "../routes/userRoute.jss";
+import connectDB from "../config/database.js";
+import authRoute from "../routes/authRoute.js";
+import productRoute from "../routes/productRoute.js";
+import userRoute from "../routes/userRoute.js";
 
 //rest object
 const app = express();
