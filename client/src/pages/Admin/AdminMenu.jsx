@@ -96,7 +96,7 @@ const AdminMenu = ({ toggleMenu }) => {
           </div>
           <div className="flex flex-col  text-black font-[300] text-[14px] mb-2 mt-0 ">
             <NavLink
-              to="/admin/dashboard/orders"
+              to="/admin/orders"
               onClick={scrollToTop}
               className={({ isActive }) =>
                 isActive ? "font-[600] text-primaryBlue bg-[#f1f3f5]" : ""
