@@ -2,13 +2,11 @@
   "name": "e-commerce",
   "version": "1.0.0",
   "description": "e-commerce application",
-  "main": "api/index.js",
   "type": "module",
   "scripts": {
     "start": "node api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "SURYA",
   "license": "ISC",
   "dependencies": {
@@ -24,7 +22,6 @@
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.4.1",
     "morgan": "^1.10.0",
-    "react-icons": "^4.10.1",
     "stripe": "^13.6.0"
   }
 }
