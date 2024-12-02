@@ -1,12 +1,8 @@
-export default {
-  build: {
-    chunkSizeWarningLimit: 1000, // Set a larger limit (in KB)
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ["react", "react-dom", "lodash"], // Example of manual chunking
-        },
-      },
-    },
-  },
-};
+/* eslint-disable no-unused-vars */
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+    plugins: [react()],
+
+});
